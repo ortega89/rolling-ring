@@ -21,7 +21,7 @@ public class RollingRingApp implements Runnable {
 	public void run() {
 		frame = new JFrame("Rolling Ring");
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		frame.setType(Type.UTILITY);
+		frame.setResizable(false);
 		
 		panel = new RollingPanel(PANEL_SIZE, PANEL_SIZE);
 		panel.addTimerListener(new RingGeneratingListener(panel, 
